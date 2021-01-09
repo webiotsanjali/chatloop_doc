@@ -1,0 +1,15 @@
+/**=====================
+     buttons css start
+==========================**/
+.btn {
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 8px 30px 7px;
+  border-radius: 8px;
+  font-size: 14px;
+  position: relative;
+}
+/**=====================
+   buttons css end
+==========================**/

@@ -1,0 +1,49 @@
+/*! -----------------------------------------------------------------------------------
+
+    Template Name: Chatloop theme
+    Template URI: http://admin.pixelstrap.com/chatloop/theme
+    Description: This is Landing theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+
+-----------------------------------------------------------------------------------
+ */
+
+
+
+@import "theme/variables";
+@import "utils/mixins";
+
+@import "vendors/font-awesome";
+
+@import "base/reset";
+
+@import "components/keyframes";
+// @import "components/breadcrumb";
+@import "components/buttons";
+@import "components/labels";
+// @import "components/blog";
+// @import "components/about";
+// @import "components/service";
+// @import "components/feature";
+// @import "components/property";
+// @import "components/pagination";
+// @import "components/portfolio";
+// @import "components/map";
+// @import "components/slick";
+// @import "components/testimonial";
+
+@import "components/card";
+// @import "components/tree";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/dark";
+
+// pages
+// @import "pages/inner-pages";
+
+@import "theme/document";
+// @import "theme/theme";
+// @import "theme/responsive";

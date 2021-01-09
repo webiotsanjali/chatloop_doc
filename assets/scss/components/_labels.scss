@@ -1,0 +1,85 @@
+/**=====================
+     labels css start
+==========================**/
+.label {
+    border-radius: 5px;
+    padding: 4px 15px 3px;
+    font-family: $font_1, $font_3;
+    font-weight: 500;
+    font-size: 12px;
+    color: $white;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.theme-label {
+    margin-bottom: -15px;
+    > div {
+        > span {
+            margin-bottom: 15px;
+            + span {
+                margin-left: 4px;
+            }
+        }
+    }
+}
+.label-heart {
+    width: 34px;
+    height: 34px;
+    border-radius: 100%;
+    @extend %flex-center;
+    position: relative;
+    i {
+        font-size: 14px;
+        margin: 0 0 -2px 0;
+    }
+    &::after {
+        border-radius: 100%;
+        @extend %common-lightafter;
+    }
+    &.color-7 {
+        color: var(--theme-deafult10);
+        &::after {
+            opacity: 0.1;
+            background-color: var(--theme-deafult10);
+        }
+    }
+    &.color-6 {
+        color: var(--theme-deafult9);
+        &::after {
+            opacity: 0.1;
+            background-color: var(--theme-deafult9);
+        }
+    }
+    &.color-4 {
+        color: var(--theme-deafult7);
+        &::after {
+            opacity: 0.1;
+            background-color: var(--theme-deafult7);
+        }
+    }
+    &.color-1 {
+        color: var(--theme-deafult2);
+       &::after {
+            opacity: 0.1;
+            background-color: var(--theme-deafult);
+       }
+    }
+    &.color-2 {
+        color: var(--theme-deafult3);
+        &::after {
+            opacity: 0.12;
+            background-color: var(--theme-deafult3);
+        }
+    }
+    &.color-3 {
+        color: var(--theme-deafult5);
+        &::after {
+            opacity: 0.12;
+            background-color: var(--theme-deafult5);
+        }
+    }
+}
+/**=====================
+     labels css end
+==========================**/
