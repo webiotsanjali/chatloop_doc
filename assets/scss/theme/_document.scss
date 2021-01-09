@@ -65,14 +65,14 @@ h6 {
 a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  color: var(--theme-deafult6);
+  color: $primary-color;
   &:hover,
   &:focus {
     text-decoration: none;
     outline: none;
   }
   &:hover {
-    color: var(--theme-deafult6);
+    color: $primary-color;
   }
 }
 .btn {
@@ -96,6 +96,13 @@ li {
 *:focus {
   text-decoration: none;
   outline: none;
+}
+.navbar {
+  .navbar-brand {
+    img {
+      width: 200px;
+    }
+  }
 }
 #treeBasic {
   ul {
@@ -190,8 +197,8 @@ li {
   box-shadow: 0 0 10px $primary-color;
   opacity: 0.7;
   transition: all 0.3s ease;
-  height: 65px;
-  width: 65px;
+  height: 35px;
+  width: 35px;
 
   p {
     font-weight: 600;
@@ -381,8 +388,11 @@ ul.list-style {
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 
-    &:nth-child(6n+6) {
+    &:nth-child(6n+6), &:nth-child(3n) {
       border-right: none;
+    }
+    &:last-child, &:nth-child(13), &:nth-child(14) {
+      border-bottom: none;
     }
     &:hover {
       img {
@@ -1505,8 +1515,8 @@ p {
 
     &.log-improve {
       //background: $secondary-color;
-      border: 1px solid $secondary-color;
-      color: $secondary-color;
+      border: 1px solid $primary-color;
+      color: $primary-color;
     }
 
     &.log-new {
@@ -2091,60 +2101,5 @@ p {
   svg {
     width: 20px;
     height: 20px;
-  }
-}
-.small-bar-chartist {
-  position: relative;
-  svg{
-      height: 36px !important;
-      width: 50px !important;
-      .ct-series-a {
-          .ct-point, .ct-line, .ct-bar, .ct-slice-donut {
-              stroke: var(--theme-deafult7);
-          }
-      }
-      .ct-series-b {
-          .ct-point, .ct-line, .ct-bar, .ct-slice-donut {
-              stroke: var(--theme-deafult7);
-              opacity: 0.2;
-          }
-      }
-  }
-  .chartist-tooltip {
-      position: absolute;
-      opacity: 0;
-      .chartist-tooltip-value {
-        font-size: 10px;
-        padding: 5px;
-        color: $white;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 4px;
-      }
-      &.tooltip-show {
-        opacity: 1;
-      }
-    }
-}
-.map-doc {
-  height: 250px;
-  position: relative;
-  .map {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .infoBox {
-    .marker-detail {
-      .detail-part {
-        ul {
-          padding-left: 0;
-          li {
-            display: inline-block;
-          }
-        }
-      }
-    }
   }
 }

@@ -288,6 +288,9 @@
         box-shadow: $card-box-shadow;
         top: 60px !important;
         height: calc(100vh - 60px);
+        z-index: 3;
+        background-color: $white;
+        left: -265px;
         &.open {
             left: 0;
         }
@@ -425,6 +428,9 @@
     .features {
         .f-block {
             border-right: none;
+            &:nth-child(13), &:nth-child(14) {
+                border-bottom: 1px solid #ddd;
+            }
         }
     }
     .getting-started-sec {
